@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArticalCell" rowHeight="220" id="KGk-i7-Jjw" customClass="ArticalCell" customModule="NY_Times" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="423" height="220"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="423" height="220"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5tw-m0-hFw">
+                        <rect key="frame" x="0.0" y="0.0" width="423" height="220"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EkS-ok-Z1C">
+                                <rect key="frame" x="8" y="8" width="407" height="204"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SAY-3a-Ew0" customClass="CustomImageView" customModule="NY_Times" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="77" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="K9o-dd-i0v"/>
+                                            <constraint firstAttribute="height" constant="50" id="Pxz-Dv-Ulw"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="round" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0ja-xK-rbL">
+                                        <rect key="frame" x="58" y="0.0" width="319" height="204"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How a Distinctive Beauty Brand Fell Apart" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGG-Af-Uen">
+                                                <rect key="frame" x="0.0" y="0.0" width="319" height="40.666666666666664"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="When the private equity firm Carlyle bought Beautycounter," textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDb-1j-dyQ">
+                                                <rect key="frame" x="0.0" y="48.666666666666671" width="319" height="130.33333333333331"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" name="arrow"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gTN-XY-YN8">
+                                                <rect key="frame" x="0.0" y="187" width="319" height="17"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Business" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mp-fe-4Mh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="186" height="17"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <color key="textColor" name="arrow"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar-clock" translatesAutoresizingMaskIntoConstraints="NO" id="TMa-Ab-YxC">
+                                                        <rect key="frame" x="194" y="0.0" width="17" height="17"/>
+                                                        <color key="tintColor" name="arrow"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="17" id="Hft-cP-vrE"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20-12-2024" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLE-4G-PvP">
+                                                        <rect key="frame" x="219" y="0.0" width="100" height="17"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="OGy-F6-6po"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <color key="textColor" name="arrow"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="gTN-XY-YN8" secondAttribute="trailing" id="2Gk-qc-OxC"/>
+                                            <constraint firstItem="gTN-XY-YN8" firstAttribute="leading" secondItem="0ja-xK-rbL" secondAttribute="leading" id="fvJ-bb-i5E"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8k-E6-hPl">
+                                        <rect key="frame" x="385" y="91" width="22" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="22" id="XaU-gm-htg"/>
+                                        </constraints>
+                                        <color key="tintColor" name="arrow"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="ic_right_arrow"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="0ja-xK-rbL" firstAttribute="top" secondItem="EkS-ok-Z1C" secondAttribute="top" id="B5F-jC-L6k"/>
+                                    <constraint firstAttribute="bottom" secondItem="0ja-xK-rbL" secondAttribute="bottom" id="qMV-zS-hAi"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="white"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="EkS-ok-Z1C" secondAttribute="bottom" constant="8" id="75K-UK-ZQK"/>
+                            <constraint firstAttribute="trailing" secondItem="EkS-ok-Z1C" secondAttribute="trailing" constant="8" id="Gbs-WJ-TYr"/>
+                            <constraint firstItem="EkS-ok-Z1C" firstAttribute="leading" secondItem="5tw-m0-hFw" secondAttribute="leading" constant="8" id="HEl-cT-p0G"/>
+                            <constraint firstItem="EkS-ok-Z1C" firstAttribute="top" secondItem="5tw-m0-hFw" secondAttribute="top" constant="8" id="JPR-6g-zXH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="5tw-m0-hFw" secondAttribute="bottom" id="TGZ-4U-iaB"/>
+                    <constraint firstAttribute="trailing" secondItem="5tw-m0-hFw" secondAttribute="trailing" id="UCN-Mg-reB"/>
+                    <constraint firstItem="5tw-m0-hFw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="XGD-lU-svF"/>
+                    <constraint firstItem="5tw-m0-hFw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="j4f-dv-lb5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="_category" destination="1Mp-fe-4Mh" id="iyL-cV-4dX"/>
+                <outlet property="_date" destination="jLE-4G-PvP" id="HyL-qh-gKr"/>
+                <outlet property="_subTitle" destination="MDb-1j-dyQ" id="6wa-VN-9re"/>
+                <outlet property="_thumb" destination="SAY-3a-Ew0" id="qaC-Yb-Tmn"/>
+                <outlet property="_title" destination="rGG-Af-Uen" id="ZOo-el-Xvb"/>
+            </connections>
+            <point key="canvasLocation" x="-110.68702290076335" y="81.690140845070431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="calendar-clock" width="17" height="17"/>
+        <image name="ic_right_arrow" width="9" height="14.666666984558105"/>
+        <namedColor name="arrow">
+            <color red="0.44699999690055847" green="0.44699999690055847" blue="0.44699999690055847" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
