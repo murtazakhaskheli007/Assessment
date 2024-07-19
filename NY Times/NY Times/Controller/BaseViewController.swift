@@ -26,6 +26,14 @@ class BaseViewController: UIViewController {
     }
 }
 
+//MARK: - IBActions
+extension BaseViewController {
+    @IBAction func pop(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
+}
+
+
 //MARK: - BaseViewController
 extension BaseViewController {
     func showAlert(title: String, message: String, btnTitle: String){

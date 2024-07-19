@@ -134,8 +134,110 @@
             </objects>
             <point key="canvasLocation" x="57.251908396946561" y="-2.1126760563380285"/>
         </scene>
+        <!--DetailsVC-->
+        <scene sceneID="rfn-fB-beu">
+            <objects>
+                <viewController storyboardIdentifier="DetailsVC" id="24p-YR-fKP" customClass="DetailsVC" customModule="NY_Times" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ce9-TQ-3O1">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="szL-9w-Llb">
+                                <rect key="frame" x="0.0" y="59" width="393" height="55"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aVk-SY-aLS">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1"/>
+                                        <color key="backgroundColor" name="navTop"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="qde-ps-Poq"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.59999999999999998"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                <size key="value" width="0.0" height="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="brw-Y3-E7d">
+                                        <rect key="frame" x="8" y="0.0" width="377" height="55"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nSe-Ed-Ht3">
+                                                <rect key="frame" x="0.0" y="0.0" width="24" height="55"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="24" id="HyX-Y4-t2f"/>
+                                                </constraints>
+                                                <color key="tintColor" name="white"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="backIcon"/>
+                                                <connections>
+                                                    <action selector="pop:" destination="24p-YR-fKP" eventType="touchUpInside" id="96m-qb-Ln8"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NY Times Most Popular" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJB-UF-3RB">
+                                                <rect key="frame" x="32" y="0.0" width="345" height="55"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" name="white"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="navbg"/>
+                                <constraints>
+                                    <constraint firstItem="brw-Y3-E7d" firstAttribute="leading" secondItem="szL-9w-Llb" secondAttribute="leading" constant="8" id="1t4-L2-XbU"/>
+                                    <constraint firstAttribute="height" constant="55" id="5qK-7D-y0m"/>
+                                    <constraint firstAttribute="trailing" secondItem="brw-Y3-E7d" secondAttribute="trailing" constant="8" id="DeG-qo-Il6"/>
+                                    <constraint firstItem="brw-Y3-E7d" firstAttribute="top" secondItem="szL-9w-Llb" secondAttribute="top" id="GIP-XB-fZV"/>
+                                    <constraint firstItem="aVk-SY-aLS" firstAttribute="top" secondItem="szL-9w-Llb" secondAttribute="top" id="fAS-5w-t87"/>
+                                    <constraint firstItem="aVk-SY-aLS" firstAttribute="leading" secondItem="szL-9w-Llb" secondAttribute="leading" id="j53-y9-aWZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="brw-Y3-E7d" secondAttribute="bottom" id="vtv-Qa-5d1"/>
+                                    <constraint firstAttribute="trailing" secondItem="aVk-SY-aLS" secondAttribute="trailing" id="wgD-oL-rs1"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="w0q-PO-A8f">
+                                <rect key="frame" x="0.0" y="130" width="393" height="688"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="24p-YR-fKP" id="BJB-dW-QiO"/>
+                                    <outlet property="delegate" destination="24p-YR-fKP" id="p3A-ra-aL1"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4R8-Yh-tR9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="szL-9w-Llb" firstAttribute="top" secondItem="4R8-Yh-tR9" secondAttribute="top" id="D6a-yp-cOd"/>
+                            <constraint firstItem="4R8-Yh-tR9" firstAttribute="bottom" secondItem="w0q-PO-A8f" secondAttribute="bottom" id="GHC-48-xJR"/>
+                            <constraint firstItem="szL-9w-Llb" firstAttribute="leading" secondItem="4R8-Yh-tR9" secondAttribute="leading" id="LCE-8i-vuR"/>
+                            <constraint firstItem="w0q-PO-A8f" firstAttribute="leading" secondItem="4R8-Yh-tR9" secondAttribute="leading" id="Pev-Qc-RNV"/>
+                            <constraint firstItem="4R8-Yh-tR9" firstAttribute="trailing" secondItem="szL-9w-Llb" secondAttribute="trailing" id="j2g-kl-Gi4"/>
+                            <constraint firstItem="4R8-Yh-tR9" firstAttribute="trailing" secondItem="w0q-PO-A8f" secondAttribute="trailing" id="sDy-j6-tMf"/>
+                            <constraint firstItem="w0q-PO-A8f" firstAttribute="top" secondItem="szL-9w-Llb" secondAttribute="bottom" constant="16" id="v6D-IY-WPy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="HRX-df-5Dj"/>
+                    <connections>
+                        <outlet property="_title" destination="xJB-UF-3RB" id="mPV-dx-sWZ"/>
+                        <outlet property="kTableView" destination="w0q-PO-A8f" id="iT8-6w-gsf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="00I-Hh-D16" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1737" y="-2"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="backIcon" width="9.6666669845581055" height="21.666666030883789"/>
         <image name="leftMenu" width="23" height="20.333333969116211"/>
         <image name="search_icon" width="21" height="21"/>
         <image name="vmenu" width="32" height="32"/>
